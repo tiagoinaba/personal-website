@@ -13,6 +13,15 @@ body {
     color: #FFF;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -89,25 +98,31 @@ body {
             gap: 4rem;
 
             .button {
-                background-color: transparent;
-                text-decoration: none;
-                color: inherit;
-                font-family: inherit;
                 font-size: 2.8rem;
-                border: none;
-                border-bottom: 1px solid white;
-                cursor: pointer;
-                background: linear-gradient(to left, transparent 50%, white 50%) right;
-                background-size: 200% 100%;
-                transition: all .4s;
-            }
 
-            .button:hover {
-                color: black;
-                background-position: left;
             }
         }
     }
+}
+
+.button {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    border: none;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 0px 10px 0 0;
+    background: linear-gradient(to left, transparent 50%, white 50%) right;
+    background-size: 200% 100%;
+    transition: all .4s;
+}
+
+.button:hover {
+    color: black;
+    background-position: left;
 }
 
 .about {
@@ -147,5 +162,66 @@ body {
     hr {
         border: 1px solid #7474742c;
         margin-bottom: 7rem;
+    }
+}
+
+.project {
+    
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    width: 30vw;
+    position: relative;
+    
+    .card-side {
+        height: 400px;
+        background: linear-gradient(to top right, black, #110082, #32006f);
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        justify-content: center;
+        margin-top: 7rem;
+        align-items: center;
+        transition: all .8s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+    }
+
+    .card-back {
+        transform: rotateY(-180deg);
+
+        p, a {
+            font-size: 1.6rem;
+        }
+    }
+
+    
+
+    &:hover .card-front {
+        transform: rotateY(180deg)
+    }
+
+    &:hover .card-back {
+        transform: rotateY(0deg)
+    }
+
+    .img {
+        position: relative;
+        width: 34.5rem;
+        height: 20.7rem;
+    
+        &-element {
+            object-fit: cover;
+            border-radius: 27px;
+        }
+    }
+    
+    .project-name {
+        font-size: 2.7rem;
+        margin-top: 2.2rem;
+        display: inline-block;
     }
 }
