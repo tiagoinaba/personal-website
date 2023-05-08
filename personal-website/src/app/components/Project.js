@@ -17,7 +17,7 @@ export default function Project({ project }) {
             </div>
             <div className="card-back card-side">
                 <p>{description}</p>
-                <a href={link} className="button">Go to website</a>
+                <a href={link} target="_blank" className="button">Go to website</a>
             </div>
         </div>
     )

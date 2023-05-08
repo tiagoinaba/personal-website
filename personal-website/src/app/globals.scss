@@ -22,6 +22,10 @@ html {
     -ms-overflow-style: none;
 }
 
+hr {
+    border: 1px solid #7474742c;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -116,7 +120,7 @@ html {
     padding: .5rem 1rem;
     border-radius: 0px 10px 0 0;
     background: linear-gradient(to left, transparent 50%, white 50%) right;
-    background-size: 200% 100%;
+    background-size: 201% 100%;
     transition: all .4s;
 }
 
@@ -126,18 +130,24 @@ html {
 }
 
 .about {
-    padding: 7rem 12rem;
+    padding: 7rem 12rem 0;
     display: grid;
-    grid-template-columns: 1fr 1px 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 8rem;
+    position: relative;
 
     hr {
         border: 1px solid #7474742c;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        height: 90%;
+
     }
     
     .bio {
         font-size: 1.6rem;
-        margin-top: 5.5rem;
     }
 
     .knowledge {
@@ -145,7 +155,6 @@ html {
 
         &__logos {
             display: flex;
-            margin-top: 5.5rem;
             flex-wrap: wrap;
             gap: 6rem;
         }
@@ -154,14 +163,15 @@ html {
 
 .topic {
     font-size: 4.2rem;
+    margin-bottom: 7rem;
 }
 
 .projects {
-    padding: 3rem 12rem 7rem;
+    padding: 3rem 12rem 0rem;
 
     hr {
         border: 1px solid #7474742c;
-        margin-bottom: 7rem;
+        margin: 7rem 0;
     }
 }
 
@@ -169,24 +179,24 @@ html {
     
     perspective: 150rem;
     -moz-perspective: 150rem;
-    width: 30vw;
     position: relative;
+    width: 400px;
+    height: 500px;
     
     .card-side {
-        height: 400px;
+        height: 100%;
+        width: 100%;
         background: linear-gradient(to top right, black, #110082, #32006f);
         padding: 5rem;
         display: flex;
         flex-direction: column;
         border-radius: 15px;
         justify-content: center;
-        margin-top: 7rem;
         align-items: center;
         transition: all .8s;
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         backface-visibility: hidden;
     }
 
@@ -195,6 +205,10 @@ html {
 
         p, a {
             font-size: 1.6rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
         }
     }
 
@@ -223,5 +237,89 @@ html {
         font-size: 2.7rem;
         margin-top: 2.2rem;
         display: inline-block;
+    }
+}
+
+.contact {
+    padding: 0 0 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    
+    &__main {
+        grid-column: 0 / 1;
+        margin-left: 12rem;
+
+        
+        &--logo:not(:last-child) {
+            margin-right: 2rem;
+        }
+        
+        p {
+            margin: 9.6rem 0 3.5rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        &--form {
+            background-color: #424242;
+            padding: 4rem;
+            border-radius: 20px;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .button {
+                align-self: center;
+                font-size: 1.6rem;
+            }
+
+            input, textarea {
+                background: #D9D9D9;
+                outline: none;
+                border: none;
+                border-radius: 18px;
+                padding: .6rem 1rem;
+                font: inherit;
+                font-size: 1.6rem;
+                
+            }
+            
+            textarea {
+                resize: none;
+                font: inherit;
+                font-size: 1.6rem;
+            }
+
+            label {
+                color: rgba($color: #FFF, $alpha: .6);
+                font-size: 1.2rem;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    hr {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 90%;
+        transform: translate(-50%, -55%);
+    }
+
+    p {
+        font-size: 2.4rem;
+        font-weight: 200;
     }
 }

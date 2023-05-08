@@ -8,6 +8,7 @@ export default function Projects() {
             <hr />
             <Topic>Projects</Topic>
             <Project project={projectData.weightTracker} />
+            <hr />
         </section>
     )
 }
