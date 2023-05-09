@@ -7,7 +7,7 @@ import ContactForm from './ContactForm'
 
 export default function Contact() {
   return (
-    <section className='contact'>
+    <section className='contact' id='contact'>
         <div className="contact__main">
             <Topic>Contact</Topic>
             <p>Email: tiago.inaba@gmail.com</p>

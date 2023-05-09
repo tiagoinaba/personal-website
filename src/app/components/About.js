@@ -17,7 +17,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export default function About() {
     return (
-        <section className="about">
+        <section className="about" id="about">
             <div className="about__text">
                 <Topic>About me</Topic>
                 <p className="bio">

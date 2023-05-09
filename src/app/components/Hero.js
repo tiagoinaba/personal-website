@@ -1,3 +1,5 @@
+const fileUrl = '../../assets/files/resume.docx'
+
 export default function Hero() {
     return (
         <main className="hero">
@@ -8,8 +10,8 @@ export default function Hero() {
                     based in Brazil.
                 </h1>
                 <div className="hero__content--buttons">
-                    <a href="#" className="button">Download CV</a>
-                    <a href="#" className="button">Let&apos;s Talk!</a>
+                    <a href='/resume.docx' className="button" download={"tiagoinaba resume.docx"}>Download CV</a>
+                    <a href="#contact" className="button">Let&apos;s Talk!</a>
                 </div>
             </div>
         </main>

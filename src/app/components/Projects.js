@@ -4,7 +4,7 @@ import projectData from "../projectData";
 
 export default function Projects() {
     return (
-        <section className="projects">
+        <section className="projects" id="projects">
             <hr />
             <Topic>Projects</Topic>
             <Project project={projectData.weightTracker} />
