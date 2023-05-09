@@ -16,7 +16,7 @@ export default function Contact() {
         </div>
         <hr />
         <div className="contact__form">
-            <p>Or fill in this form and I'll get in touch!</p>
+            <p>Or fill in this form and I&apos;ll get in touch!</p>
             <ContactForm />
         </div>
     </section>
