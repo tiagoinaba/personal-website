@@ -11,8 +11,12 @@ export default function Contact() {
         <div className="contact__main">
             <Topic>Contact</Topic>
             <p>Email: tiago.inaba@gmail.com</p>
-            <Image src={linkedinLogo} width={85} height={85} alt='LinkedIn logo' className='contact__main--logo'></Image>
-            <Image src={githubLogo} width={85} height={85} alt='Github logo' className='contact__main--logo'></Image>
+            <a href="https://www.linkedin.com/in/tiago-inaba-654774123/" target='_blank'>
+              <Image src={linkedinLogo} width={85} height={85} alt='LinkedIn logo' className='contact__main--logo'></Image>
+            </a>
+            <a href="https://github.com/tiagoinaba" target='_blank'>
+              <Image src={githubLogo} width={85} height={85} alt='Github logo' className='contact__main--logo'></Image>
+            </a>
         </div>
         <hr />
         <div className="contact__form">
