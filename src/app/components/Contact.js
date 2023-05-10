@@ -1,3 +1,5 @@
+import '../sass/_contact.scss'
+
 import React from 'react'
 import Topic from './Topic'
 import linkedinLogo from '../../assets/img/logos/linkedin.svg'

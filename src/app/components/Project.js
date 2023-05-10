@@ -1,3 +1,5 @@
+import '../sass/_project.scss'
+
 import Image from "next/image"
 
 export default function Project({ project }) {

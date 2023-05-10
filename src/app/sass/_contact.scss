@@ -1,0 +1,160 @@
+.contact {
+    padding: 0 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    text-align: center;
+    
+    &__main {
+        
+        &--logo:not(:last-child) {
+            margin-right: 2rem;
+        }
+        
+        p {
+            margin: 2rem 0;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        &--form {
+            background-color: #424242;
+            padding: 4rem;
+            border-radius: 20px;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .button {
+                align-self: center;
+                font-size: 1.6rem;
+            }
+
+            input, textarea {
+                background: #D9D9D9;
+                outline: none;
+                border: none;
+                border-radius: 18px;
+                padding: .6rem 1rem;
+                font: inherit;
+                font-size: 1.6rem;
+                
+            }
+            
+            textarea {
+                resize: none;
+                font: inherit;
+                font-size: 1.6rem;
+            }
+
+            label {
+                color: rgba($color: #FFF, $alpha: .6);
+                font-size: 1.2rem;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    hr {
+        display: none;
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+}
+
+@media (width > 1000px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        
+        &__main {
+            &--logo:not(:last-child) {
+                margin-right: 2rem;
+            }
+            
+            p {
+                margin: 9.6rem 0 3.5rem;
+            }
+        }
+    
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+    
+            &--form {
+                background-color: #424242;
+                padding: 4rem;
+                border-radius: 20px;
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+    
+                .button {
+                    align-self: center;
+                    font-size: 1.6rem;
+                }
+    
+                input, textarea {
+                    background: #D9D9D9;
+                    outline: none;
+                    border: none;
+                    border-radius: 18px;
+                    padding: .6rem 1rem;
+                    font: inherit;
+                    font-size: 1.6rem;
+                    
+                }
+                
+                textarea {
+                    resize: none;
+                    font: inherit;
+                    font-size: 1.6rem;
+                }
+    
+                label {
+                    color: rgba($color: #FFF, $alpha: .6);
+                    font-size: 1.2rem;
+                }
+            }
+    
+            p {
+                margin: 0;
+            }
+    
+        }
+    
+        hr {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 90%;
+            transform: translate(-50%, -55%);
+        }
+    
+        p {
+            font-size: 2rem;
+            font-weight: 200;
+        }
+    }
+}

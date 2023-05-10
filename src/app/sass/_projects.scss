@@ -1,0 +1,27 @@
+.projects {
+    padding: 3rem 5rem 0rem;
+    text-align: center;
+
+    hr {
+        border: 1px solid #7474742c;
+        margin: 7rem 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+@media (width > 1000px) {
+    .projects {
+        padding: 12rem 5rem 0rem;
+
+        &__container {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}

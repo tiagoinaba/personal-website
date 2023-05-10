@@ -1,0 +1,83 @@
+.project {
+    
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    width: clamp(280px, 40%, 400px);
+    aspect-ratio: 0.8;
+    
+    .card-side {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to top right, rgb(0, 0, 0), #0d0063, #32006f);
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        transition: all .8s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+    }
+
+    .card-back {
+        transform: rotateY(-180deg);
+
+        p, a {
+            font-size: 1.6rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    
+
+    &:hover .card-front {
+        transform: rotateY(180deg)
+    }
+
+    &:hover .card-back {
+        transform: rotateY(0deg)
+    }
+
+    .img {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 5/3;
+    
+        &-element {
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+    
+    .project-name {
+        font-size: 2.7rem;
+        margin-top: 2.2rem;
+        display: inline-block;
+    }
+}
+
+@media (width > 1000px) {
+    .project {
+        width: 300px;
+        aspect-ratio: 0.7;
+
+        .card-side {
+            padding: 5rem;
+        }
+
+        .img {
+            width: 120%;
+
+            &-element {
+                border-radius: 27px;
+            }
+        }
+    }
+}
