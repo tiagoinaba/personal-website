@@ -1,3 +1,5 @@
+import '../sass/_topic.scss'
+
 // Am lazy
 import { Montserrat } from "next/font/google"
 

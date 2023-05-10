@@ -1,0 +1,44 @@
+.about {
+    padding: 4rem 6rem 0;
+    text-align: center;
+
+    hr {
+        margin: 3rem 0;
+    }
+    
+    .bio {
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+
+    .knowledge {
+        
+
+        &__logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6rem;
+        }
+    }
+}
+
+@media (width > 1200px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+        padding: 7rem 12rem 0;
+        position: relative;
+
+        hr {
+            border: 1px solid #7474742c;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -45%);
+            height: 90%;
+    
+        }
+    }
+}

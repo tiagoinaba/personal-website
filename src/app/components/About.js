@@ -1,3 +1,5 @@
+import '../sass/_about.scss'
+
 import Image from "next/image"
 
 import { Montserrat } from "next/font/google"

@@ -1,0 +1,11 @@
+.topic {
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+}
+
+@media (width > 600px) {
+    .topic {
+        font-size: 4.2rem;
+        margin-bottom: 7rem;
+    }
+}

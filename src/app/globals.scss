@@ -53,42 +53,7 @@ hr {
     background-position: left;
 }
 
-.about {
-    padding: 7rem 12rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8rem;
-    position: relative;
 
-    hr {
-        border: 1px solid #7474742c;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -35%);
-        height: 90%;
-
-    }
-    
-    .bio {
-        font-size: 1.6rem;
-    }
-
-    .knowledge {
-        
-
-        &__logos {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6rem;
-        }
-    }
-}
-
-.topic {
-    font-size: 4.2rem;
-    margin-bottom: 7rem;
-}
 
 .projects {
     padding: 3rem 12rem 0rem;
