@@ -13,11 +13,11 @@ export default function Contact() {
         <div className="contact__main">
             <Topic>Contact</Topic>
             <p>Email: tiago.inaba@gmail.com</p>
-            <a href="https://www.linkedin.com/in/tiago-inaba-654774123/" target='_blank'>
-              <Image src={linkedinLogo} width={85} height={85} alt='LinkedIn logo' className='contact__main--logo'></Image>
+            <a href="https://www.linkedin.com/in/tiago-inaba-654774123/" target='_blank' className='contact__main--logo'>
+              <Image src={linkedinLogo} width={85} height={85} alt='LinkedIn logo'></Image>
             </a>
-            <a href="https://github.com/tiagoinaba" target='_blank'>
-              <Image src={githubLogo} width={85} height={85} alt='Github logo' className='contact__main--logo'></Image>
+            <a href="https://github.com/tiagoinaba" target='_blank' className='contact__main--logo'>
+              <Image src={githubLogo} width={85} height={85} alt='Github logo'></Image>
             </a>
         </div>
         <hr />
