@@ -1,3 +1,4 @@
+import '../sass/_hero.scss'
 const fileUrl = '../../assets/files/resume.docx'
 
 export default function Hero() {
