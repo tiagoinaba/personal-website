@@ -18,7 +18,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 6rem;
+            gap: 3rem;
         }
     }
 }
@@ -39,6 +39,14 @@
             transform: translate(-50%, -45%);
             height: 90%;
     
+        }
+
+        .knowledge {
+
+            &__logos {
+                gap: 6rem;
+
+            }
         }
     }
 }
