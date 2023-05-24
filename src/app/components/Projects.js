@@ -12,6 +12,7 @@ export default function Projects() {
             <Topic>Projects</Topic>
             <div className="projects__container">
                 <Project project={projectData.weightTracker} />
+                <Project project={projectData['2048Clone']} />
             </div>
             <hr />
         </section>
