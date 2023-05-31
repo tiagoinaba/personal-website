@@ -1,6 +1,8 @@
 .header {
     display: flex;
     padding: 3rem;
+    justify-content: space-between;
+    align-items: center;
 
     .btn {
         background-color: rgba(159, 159, 159, 0.2);
@@ -68,6 +70,42 @@
     &__last-name {
         font-weight: 800;
         color: #9C9C9C;
+    }
+
+    &__translate--container {
+        border-radius: 20%;
+        background-color: transparent;
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+        margin-right: 7rem;
+        transition: background-color .4s;
+        
+        
+        &-active {
+            background-color: white;
+            transition: background-color .4s;
+        }
+    }
+
+    &__translate {
+        font-size: 2.4rem;
+        transition: all .2s;
+        user-select: none;
+        color: inherit;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -48% -42%;
+        transition: color .4s;
+        cursor: pointer;
+    }
+
+    .toggle-active {
+        color: rgb(57, 57, 57);
+        transition: color .4s;
     }
     
     .nav {

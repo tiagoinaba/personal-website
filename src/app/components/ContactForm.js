@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Email from './smtp'
+import { LanguageContextConsumer } from '../context/langContext';
 
 
 export default function ContactForm() {
@@ -34,24 +35,32 @@ export default function ContactForm() {
     }
 
   return (
-    <form className='contact__form--form' onSubmit={e => {
-            e.preventDefault()
-            sendEmail()
-            setFormData({
-                name: "",
-                email: "",
-                message: ""
-            })
-            return false
+    <LanguageContextConsumer>
+        {
+            ({language}) => {
+                return (
+                    <form className='contact__form--form' onSubmit={e => {
+                            e.preventDefault()
+                            sendEmail()
+                            setFormData({
+                                name: "",
+                                email: "",
+                                message: ""
+                            })
+                            return false
+                        }
+                    } >
+                        <label htmlFor="name">{language === "EN" ? "Name" : "Nome"}</label>
+                        <input type="text" id='name' value={formData.name} onChange={onChange} required />
+                        <label htmlFor="email">Email</label>
+                        <input type="text" id='email' value={formData.email} onChange={onChange} required />
+                        <label htmlFor="message">{language === "EN" ? "Message" : "Mensagem"}</label>
+                        <textarea name="message" id="message" value={formData.message} rows={10} onChange={onChange} required />
+                        <button type="submit" className='button'>{language === "EN" ? "Send" : "Enviar"}</button>
+                    </form>
+                )
+            }
         }
-    } >
-        <label htmlFor="name">Name</label>
-        <input type="text" id='name' value={formData.name} onChange={onChange} required />
-        <label htmlFor="email">Email</label>
-        <input type="text" id='email' value={formData.email} onChange={onChange} required />
-        <label htmlFor="message">Message</label>
-        <textarea name="message" id="message" value={formData.message} rows={10} onChange={onChange} required />
-        <button type="submit" className='button'>Send</button>
-    </form>
+    </LanguageContextConsumer>
   )
 }
