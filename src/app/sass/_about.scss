@@ -9,6 +9,11 @@
     .bio {
         font-size: 1.6rem;
         text-align: left;
+
+        a, a:link, a:active, a:visited {
+            color: rgb(160, 247, 255);
+            text-decoration: none;
+        }
     }
 
     .knowledge {
