@@ -3,6 +3,7 @@
 import { LanguageContextConsumer } from "../context/langContext";
 import "../sass/_hero.scss";
 import EnHero from "./english/EnHero";
+import PtHero from "./portuguese/PtHero";
 const fileUrl = "../../assets/files/resume.docx";
 
 export default function Hero() {
