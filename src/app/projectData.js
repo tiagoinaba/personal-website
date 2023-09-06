@@ -1,5 +1,6 @@
 import weightTrackerImg from '../assets/img/weight-tracker.png'
 import twentyFortyEightCloneImg from '../assets/img/2048-clone.png'
+import adminDBImg from '@/assets/img/admin dashboard.png'
 
 const projectData = {
     weightTracker: {
@@ -17,6 +18,14 @@ const projectData = {
         description: "Ever since it got released back in 2014, I've wanted to try my hand at making a clone of this game. Finally, I did it and it was a lot harder than I imagined. Especially because I'd never used TailwindCSS before, but it was a good learning experience.",
         descriptionPT: "Desde que foi lançado em 2014, eu tive a vontade de tentar fazer um clone desse jogo. Finalmente, eu fiz e foi mais difícil do que imaginava. Ainda mais porque eu nunca havia usado TailwindCSS antes, mas foi uma ótima experiência de aprendizado.",
         id: 1
+    },
+    adminDashboard: {
+        img: adminDBImg,
+        name: 'Admin Dashboard',
+        link: 'https://portfolio-admin-dashboard-one.vercel.app',
+        description: "This is a simple fullstack admin dashboard I made, using Next.js, shadcn-ui, TypeScript, Tailwind, Prisma, and a lot more. This is a simplified version of a project I'm developing in college that I can't yet share here.",
+        descriptionPT: "Esse é um painel de administrador fullstack que eu fiz usando Next.js, shadcn-ui, TypeScript, Tailwind, Prisma, e muito mais. Essa é uma versão simplificada de um projeto que estou desenvolvendo na faculdade, mas que ainda não posso compartilhar aqui.",
+        id: 2
     }
 }
 

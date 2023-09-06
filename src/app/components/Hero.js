@@ -25,7 +25,7 @@ export default function Hero() {
                                     </h1>)
                                 }
                                 <div className="hero__content--buttons">
-                                    <a href='/resume.docx' className="button" download={"tiagoinaba resume.docx"}>{language === "EN" ? "Download CV" : "Baixar CV"}</a>
+                                    <a href={language === "EN" ? '/resume.docx' : "/resume PT.docx"} className="button" download={"tiagoinaba resume.docx"}>{language === "EN" ? "Download CV" : "Baixar CV"}</a>
                                     <a href="#contact" className="button">{language === "EN" ? "Let's talk!" : "Vamos conversar!"}</a>
                                 </div>
                             </div>
