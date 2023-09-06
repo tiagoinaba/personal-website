@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import '../sass/_projects.scss'
+import "../sass/_projects.scss";
 
 import Topic from "./Topic";
 import Project from "./Project";
 import projectData from "../projectData";
-import { LanguageContextConsumer } from '../context/langContext';
+import { LanguageContextConsumer } from "../context/langContext";
 
 export default function Projects() {
 
